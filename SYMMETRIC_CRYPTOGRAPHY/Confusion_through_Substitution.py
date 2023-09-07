@@ -64,7 +64,7 @@ state = [
 
 
 def sub_bytes(s, sbox=s_box):
-    res = [[sbox[j] for j in i] for i in state]
+    res = [[sbox[j] for j in i] for i in s]
     return ''.join([j for i in res for j in list(map(chr, i))])
 
 
